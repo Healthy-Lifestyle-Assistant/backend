@@ -31,6 +31,8 @@ public interface Util {
 
     User createUser(int seed, Role role, Country country);
 
+    User createUser(int seed, Role role, Country country, int age);
+
     Role createUserRole();
 
     Role createAdminRole();

@@ -127,6 +127,11 @@ public class TestUtil implements Util {
         return this.createUserBase(seed, role, country, null, null, null, null);
     }
 
+    @Override
+    public User createUser(int seed, Role role, Country country, int age) {
+        return this.createUserBase(seed, role, country, age, null, null, null);
+    }
+
     private User createUserBase(
             int seed,
             Role role,
