@@ -57,4 +57,7 @@ public class ApiUrl {
 
     @Value("${api.basePath}/${api.version}/mental_workouts/default/{mental_workout_id}")
     private String defaultMentalWorkoutsDetailsUrl;
+
+    @Value("${api.basePath}/${api.version}/mental_workouts/default_mental_workouts")
+    private String defaultMentalWorkouts;
 }

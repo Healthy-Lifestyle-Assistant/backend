@@ -72,6 +72,8 @@ public class SecurityConfig {
                         .permitAll()
                         .requestMatchers(HttpMethod.GET, apiUrl.getDefaultMentalWorkoutsDetailsUrl())
                         .permitAll()
+                        .requestMatchers(HttpMethod.GET, apiUrl.getDefaultMentalWorkouts())
+                        .permitAll()
                         .requestMatchers(HttpMethod.GET, apiUrl.getErrorUrl())
                         .permitAll()
                         .requestMatchers(HttpMethod.POST, apiUrl.getErrorUrl())
